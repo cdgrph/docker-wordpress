@@ -6,4 +6,4 @@ RUN docker-php-ext-install mbstring
 
 RUN usermod -u 1000 www-data
 
-RUN printf "opcache.enable=0" > php.ini
+RUN printf "opcache.enable=0" > /usr/local/etc/php/php.ini
